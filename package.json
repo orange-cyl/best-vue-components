@@ -1,0 +1,41 @@
+{
+  "name": "cyl-components",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "vue-cli-service serve",
+    "build": "node ./build",
+    "lint": "vue-cli-service lint",
+    "publish": "npm run build && lerna publish"
+  },
+  "dependencies": {
+    "clipboard": "^2.0.11",
+    "core-js": "^3.8.3",
+    "element-ui": "^2.15.12",
+    "rollup": "^3.3.0",
+    "rollup-plugin-vue": "^6.0.0",
+    "stylus": "^0.59.0",
+    "stylus-loader": "^7.1.0",
+    "vue": "^2.6.14"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "@babel/core": "^7.12.16",
+    "@babel/eslint-parser": "^7.12.16",
+    "@vue/cli-plugin-babel": "~5.0.0",
+    "@vue/cli-plugin-eslint": "~5.0.0",
+    "@vue/cli-service": "~5.0.0",
+    "eslint": "^7.32.0",
+    "eslint-plugin-vue": "^8.0.3",
+    "lerna": "^4.0.0",
+    "vue-template-compiler": "^2.6.14"
+  },
+  "eslintConfig": {},
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}
